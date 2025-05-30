@@ -2,16 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7)), url(images/background.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(images/background.png);
     background-position: center;
     background-size: cover;
     padding: 0 8%;
+    color: #333;
 }
 
 /* NAVBAR */
@@ -30,18 +31,19 @@
 nav ul {
     list-style: none;
     display: flex;
-    gap: 60px;
+    gap: 40px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
-    font-size: 13px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #0ff; /* cool cyan highlight */
+    color: #555;
 }
 
 /* MAIN CONTENT */
@@ -57,17 +59,20 @@ nav ul li a:hover {
     flex-basis: 50%;
 }
 
+/* Title */
 h1 {
-    color: #fff;
-    font-size: 100px;
-    letter-spacing: 4px;
-    text-shadow: 0 0 20px #0ff;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 80px;
+    color: #222;
+    margin-bottom: 20px;
 }
 
+/* Paragraph */
 p {
-    color: #fff;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #555;
 }
 
 /* CARDS */
@@ -84,9 +89,10 @@ p {
     margin: 10px 15px;
     background-position: center;
     background-size: cover;
-    transition: transform 0.5s;
+    transition: transform 0.3s ease;
     color: white;
     text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .card1 {
@@ -97,36 +103,40 @@ p {
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 h5 {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 18px;
     color: #fff;
-    text-shadow: 0 0 5px #999;
+    text-shadow: 0 0 3px rgba(0,0,0,0.3);
 }
 
 .card p {
-    text-shadow: 0 0 5px #000;
-    font-size: 8px;
+    font-size: 12px;
+    text-shadow: 0 0 2px rgba(0,0,0,0.25);
 }
 
 /* RESPONSIVE */
 @media (max-width: 992px) {
     nav ul {
-        gap: 30px;
+        gap: 20px;
     }
 
     .row {
         flex-direction: column;
+        text-align: center;
     }
 
     .col {
         flex-basis: 100%;
-        text-align: center;
         margin-bottom: 20px;
     }
 
     h1 {
-        font-size: 60px;
+        font-size: 50px;
     }
 }
