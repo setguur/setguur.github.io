@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SETGUUR</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet" />
 </head>
 <body>
     <div class="container">
@@ -20,15 +20,6 @@
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </nav>
-            <img src="images/menu.png" class="menu-icon" id="menuToggle" alt="Menu Icon" />
-
-            <div class="dropdown_menu" id="dropdownMenu">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </div>
         </div>
 
         <div class="row">
@@ -39,7 +30,6 @@
                     ........................................<br />
                     .......................................
                 </p>
-                <button type="button">TO THE MY WORLD</button>
             </div>
             <div class="col">
                 <a class="card card1" href="./ebook/ebook">
@@ -53,14 +43,5 @@
             </div>
         </div>
     </div>
-
-    <script>
-        const menuIcon = document.getElementById('menuToggle');
-        const dropdown = document.getElementById('dropdownMenu');
-
-        menuIcon.addEventListener('click', () => {
-            dropdown.classList.toggle('open');
-        });
-    </script>
 </body>
 </html>
