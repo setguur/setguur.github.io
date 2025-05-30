@@ -29,20 +29,16 @@
 }
 
 .menu-icon {
-    padding: 0.5rem 1rem;
-    border: none;
-    outline: none;
-    border-radius: 20px;
     width: 30px;
     cursor: pointer;
     margin-left: 40px;
     transition: transform 0.2s ease;
+    display: none; /* default hidden for desktop */
 }
 
 .menu-icon:hover {
     transform: scale(1.05);
 }
-
 .menu-icon:active {
     transform: scale(0.95);
 }
@@ -52,10 +48,10 @@ nav {
     text-align: right;
 }
 
-nav ul li {
+nav ul {
+    display: flex;
     list-style: none;
-    display: inline-block;
-    margin-left: 60px;
+    gap: 60px;
 }
 
 nav ul li a {
@@ -65,7 +61,7 @@ nav ul li a {
 }
 
 a:hover {
-    color: rgb(0, 0, 0);
+    color: #000;
 }
 
 /* DROPDOWN MENU */
@@ -101,6 +97,7 @@ a:hover {
     justify-content: center;
 }
 
+/* HERO SECTION */
 .row {
     display: flex;
     height: 88%;
@@ -143,6 +140,7 @@ button:hover {
     color: #fff;
 }
 
+/* CARDS */
 .card {
     width: 200px;
     height: 230px;
@@ -164,7 +162,6 @@ button:hover {
 .card1 {
     background-image: url(images/pic-1.png);
 }
-
 .card2 {
     background-image: url(images/pic-2.png);
 }
@@ -183,9 +180,9 @@ h5 {
     font-size: 8px;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 @media (max-width: 992px) {
-    nav ul li a {
+    nav ul {
         display: none;
     }
 
